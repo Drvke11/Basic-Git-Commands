@@ -1,0 +1,42 @@
+git config -g user.name (user.email): to configure your name or email 
+git config user.name (user.email): to check your name or email
+
+git init : create repo
+
+git status: to check status of all exsisting files 
+
+git add <file name>: stage the file to get ready for commiting
+git add . : stage all files to get ready for commiting
+
+git reset: move all files in staging area back to working directory
+git reset filename: move specified files in staging area back to working directory
+
+git commit -m "Message here": commit file into repo
+
+git log --oneline: to check the history of commiting and show its id
+
+git checkout id-commit: return back to specified commit
+git checkout master: return back to the lastest commit of main branch
+
+git branch: list how many branch 
+git branch -a: list how many branch include from remote
+
+git branch new-branch: create new branch
+git checkout <branch name>: to move directly into that branch
+
+git merge <branch name>: to choose that branch will be merged into master branch
+(remember to having checkout into master branch before merge)
+
+git branch -d <branch name>: to delete that branch
+
+git remote add orign <remote repo's url>: add remote repo to your local repo in order to create a 
+					  connect between them so that u can push or pull
+
+then -> git push origin branch-name
+
+git clone url: clone remote repo to local remote in pc
+
+git push -u origin branch-name: push new branch from local to remote repo
+
+git pull origin branch-name: pull branch in remote to local working directory
+-> git checkout branch-name 
